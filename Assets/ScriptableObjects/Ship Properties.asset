@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23590145b2091f5499f7f16773ef651b, type: 3}
+  m_Name: Ship Properties
+  m_EditorClassIdentifier: 
+  _startPosition:
+    X: 0.5
+    Y: 0.5
+  _startRotation: 0
+  _movementSpeed: 0.3
+  _rotationSpeed: 140
+  _movementSmooth: 0.5
+  _rotationSmooth: 0
+  _transform: {fileID: 6414816970290531023, guid: c33d06b8a00af774b9695a7075fc0743, type: 3}
