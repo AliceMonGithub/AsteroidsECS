@@ -8,7 +8,12 @@ namespace Sources.Ecs
 {
     public sealed class GameBootstrapper : MonoBehaviour
     {
+        [SerializeField] private AsteroidTrajectory[] _trajectories;
+
+        [Space]
+
         [SerializeField] private ShipProperties _shipProperties;
+        [SerializeField] private AsteroidsProperties _asteroidsProperties;
 
         [Space]
 
@@ -38,7 +43,7 @@ namespace Sources.Ecs
             _updateSystems
                 .Add(new ShipInput(_world, _input))
                 .Add(new ShipMovement(_world))
-                .Add(new ShipTransformToUnity(_world, _camera))
+                .Add(new ShipTransform(_world, _camera))
                 .Init();
         }
 

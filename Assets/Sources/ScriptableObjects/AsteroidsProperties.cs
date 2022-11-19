@@ -14,10 +14,10 @@ namespace Sources.ScriptableObjects
 
         [SerializeField] private Transform[] _prefabs;
 
-        public float SpawnRate => throw new System.NotImplementedException();
+        public float SpawnRate => _spawnRate;
 
-        public float FlyingSpeed => throw new System.NotImplementedException();
+        public float FlyingSpeed => _flyingSpeed;
 
-        public IReadOnlyCollection<Transform> Prefabs => throw new System.NotImplementedException();
+        public IReadOnlyCollection<Transform> Prefabs => _prefabs;
     }
 }

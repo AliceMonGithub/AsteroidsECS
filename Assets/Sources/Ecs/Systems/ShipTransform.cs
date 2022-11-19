@@ -4,14 +4,14 @@ using Sources.Types;
 
 namespace Sources.Ecs
 {
-    public class ShipTransformToUnity : IEcsRunSystem
+    public class ShipTransform : IEcsRunSystem
     {
         private readonly EcsFilter _shipFilter;
         private readonly EcsPool<Transformable> _transformablePool;
 
         private readonly Camera _camera;
 
-        public ShipTransformToUnity(EcsWorld world, Camera camera)
+        public ShipTransform(EcsWorld world, Camera camera)
         {
             _shipFilter = world.Filter<Transformable>().Inc<Ship>().End();
 
