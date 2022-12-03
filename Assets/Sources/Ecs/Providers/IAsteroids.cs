@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sources.Types;
+using System;
 using UnityEngine;
 
 namespace Sources.Ecs
@@ -7,7 +8,7 @@ namespace Sources.Ecs
     {
         public float SpawnRate { get; }
 
-        public float FlyingSpeed { get; }
+        public Float2 FlyingSpeed { get; }
     }
 
     [Serializable]

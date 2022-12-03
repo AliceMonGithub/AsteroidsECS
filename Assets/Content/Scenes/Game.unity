@@ -152,7 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da12abcb04614b44ca77203eddf12c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _trajectories: []
   _shipProperties: {fileID: 11400000, guid: bc66a2bcd67e9b64a9c0710fdc60a818, type: 2}
+  _asteroidsProperties: {fileID: 11400000, guid: 7ce94eda2b3f65b4ca7bb1bba69f1bd2, type: 2}
   _camera: {fileID: 519420031}
 --- !u!4 &403463777
 Transform:

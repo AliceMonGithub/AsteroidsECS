@@ -44,6 +44,7 @@ namespace Sources.Ecs
                 .Add(new ShipInput(_world, _input))
                 .Add(new ShipMovement(_world))
                 .Add(new ShipTransform(_world, _camera))
+                .Add(new AsteroidsSpawn(_asteroidsProperties, _trajectories))
                 .Init();
         }
 

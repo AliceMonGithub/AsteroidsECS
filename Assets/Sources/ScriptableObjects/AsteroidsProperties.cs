@@ -1,4 +1,5 @@
 ﻿using Sources.Ecs;
+using Sources.Types;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace Sources.ScriptableObjects
     public class AsteroidsProperties : ScriptableObject, IAsteroids
     {
         [SerializeField] private float _spawnRate;
-        [SerializeField] private float _flyingSpeed;
+        [SerializeField] private Float2 _flyingSpeed;
 
         [Space]
 
@@ -16,7 +17,7 @@ namespace Sources.ScriptableObjects
 
         public float SpawnRate => _spawnRate;
 
-        public float FlyingSpeed => _flyingSpeed;
+        public Float2 FlyingSpeed => _flyingSpeed;
 
         public IReadOnlyCollection<Transform> Prefabs => _prefabs;
     }
